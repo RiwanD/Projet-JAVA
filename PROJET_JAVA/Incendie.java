@@ -2,7 +2,7 @@ public class Incendie extends Catastrophe{
 
     public Incendie(){
         // Empreinte de pollution
-        double chance = Math.random();
+        chance = Math.random();
         if(chance < 0.75){
             this.empreinte = 1;
         }else{
@@ -19,4 +19,13 @@ public class Incendie extends Catastrophe{
             pertesRess = (int)(Math.random()*(750-300));
         }
     }
+    public int getEmpreinte(){
+		return empreinte;
+	}
+	public int getGroupePerd(){
+		return groupePerd;
+	}
+	public int getPerteRess(){
+		return pertesRess;
+	}
 }
