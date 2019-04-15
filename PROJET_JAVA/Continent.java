@@ -22,9 +22,13 @@ public class Continent{
 	public int setOrg(){
 		return this.org;
 	}
+    public String getNom(){
+		return nom;
+	}
+    
     public String toString(){
         int pop = nbGroup * 7;
         return "Continent : "+nom+", possède une population de : "+pop+
-        " millions";
+        " millions d'habitants";
     }
 }
